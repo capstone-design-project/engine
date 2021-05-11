@@ -5,6 +5,7 @@ import numpy as np
 from theano.tensor.basic import outer, sub
 from word_analyzer import WordAnalyzer
 from script_analyzer import ScriptAnalyzer
+from youtube_crawler import youtubeCrawler
 from punctuator import Punctuator
 
 
@@ -181,12 +182,25 @@ def analyzeNpredict(videoId):
     return json.dumps(analyze_result, indent=4)
 
 
+def getVideoInfo(APIKey, videoId):
+    YC = youtubeCrawler(APIKey)
+    video_info = YC.get_video_info(videoId)
+
+    return json.dumps(video_info, indent=4)
+
+
 # output = analyzeAll(comedy_central)
 # with open('comedycentral_test.json', 'wt', encoding='UTF-8') as f:
 #     f.write(output)
 
 
-output = analyzeNpredict(cbc_kid)
-with open('api_result_test.json', 'wt', encoding='UTF-8') as f:
-    f.write(output)
+# output = analyzeNpredict(cbc_kid)
+# with open('api_result_test.json', 'wt', encoding='UTF-8') as f:
+#     f.write(output)
+# print(output)
+
+# with open('APIKey.json', 'rt', encoding='UTF-8') as f:
+#     key = json.load(f)
+#     apikey = key['APIkey']
+# output = getVideoInfo(apikey, cbc_kid)
 # print(output)

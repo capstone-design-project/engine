@@ -28,3 +28,55 @@ class youtubeCrawler:
                     break
 
         return video_list
+
+    def get_video_info(self, video_id):
+        video_category_id = {
+            1: 'Film & Animation',
+            2: 'Autos & Vehicles',
+            10: 'Music',
+            15: 'Pets & Animals',
+            17: 'Sports',
+            18: 'Short Movies',
+            19: 'Travel & Events',
+            20: 'Gaming',
+            21: 'Videoblogging',
+            22: 'People & Blogs',
+            23: 'Comedy',
+            24: 'Entertainment',
+            25: 'News & Politics',
+            26: 'Howto & Style',
+            27: 'Education',
+            28: 'Science & Technology',
+            29: 'Nonprofits & Activism',
+            30: 'Movies',
+            31: 'Anime/Animation',
+            32: 'Action/Adventure',
+            33: 'Classics',
+            34: 'Comedy',
+            35: 'Documentary',
+            36: 'Drama',
+            37: 'Family',
+            38: 'Foreign',
+            39: 'Horror',
+            40: 'Sci-Fi/Fantasy',
+            41: 'Thriller',
+            42: 'Shorts',
+            43: 'Shows',
+            44: 'Trailers',
+        }
+        videos = self.youtube.videos().list(
+            part='id, snippet,  recordingDetails, statistics,  topicDetails', id=video_id).execute()
+        video_info = {}
+        video_info['videoId'] = video_id
+        video_info['publishedDate'] = videos['items'][0]['snippet']['publishedAt']
+        video_info['channelId'] = videos['items'][0]['snippet']['channelId']
+        video_info['channelTitle'] = videos['items'][0]['snippet']['channelTitle']
+        video_info['title'] = videos['items'][0]['snippet']['title']
+        video_info['description'] = videos['items'][0]['snippet']['description']
+        video_info['thumbnails'] = videos['items'][0]['snippet']['thumbnails']['standard']['url']
+        video_info['category'] = video_category_id[int(videos['items']
+                                                   [0]['snippet']['categoryId'])]
+        video_info['topic'] = list(map(lambda x: x.replace(
+            'https://en.wikipedia.org/wiki/', ''), videos['items'][0]['topicDetails']['topicCategories']))
+
+        return video_info
