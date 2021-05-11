@@ -179,6 +179,7 @@ class WordAnalyzer:
         output_json['Total_sentences'] = len(sent_tokenize(text))
         output_json['avg_sentence_length'] = (
             total_words/output_json['Total_sentences'])
+        output_json['unique_words'] = word_list_stem
 
         output_json['DCL']['uncommon_words'] = self.extractUncommon(
             word_list_stem)
@@ -215,4 +216,5 @@ class WordAnalyzer:
             output_json['CEFR']['Oxford']['avg_CEFR']+output_json['CEFR']['Japanese']['avg_CEFR']) / 2
         output_json['Freq_avg_CEFR'] = (output_json['Freq']
                                         ['Tv']['avg_CEFR']+output_json['Freq']['Simpson']['avg_CEFR']+output_json['Freq']['Gutenberg']['avg_CEFR']) / 3
+
         return json.dumps(output_json, indent=4)

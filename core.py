@@ -138,7 +138,38 @@ def analyzeNpredict(videoId):
     analyze_result['C2ratio'] = cefr_ratio[5]
     analyze_result['Nratio'] = cefr_ratio[6]
 
+    # 단어 리스트 반환
+    analyze_result['uniqueList'] = wa_result['unique_words']
     analyze_result['uncommonList'] = wa_result['DCL']['uncommon_words']
+
+    def makeWordSet(targetList, subject, level):
+        wordSet = set()
+        for target in targetList:
+            for sub in subject:
+                if sub in wa_result[target]:
+                    for lv in level:
+                        wordSet.update(wa_result[target]
+                                       [sub]['classified_words'][lv])
+        return wordSet
+
+    analyze_result['easyWordList'] = makeWordSet(['CEFR', 'Freq'], [
+                                                 'Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['A1', 'A2'])
+    analyze_result['middleWordList'] = makeWordSet(
+        ['CEFR', 'Freq'], ['Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['B1', 'B2'])
+    analyze_result['middleWordList'] -= analyze_result['easyWordList']
+    analyze_result['hardWordList'] = makeWordSet(['CEFR', 'Freq'], [
+                                                 'Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['C1', 'C2'])
+    analyze_result['hardWordList'] -= (analyze_result['easyWordList']
+                                       | analyze_result['middleWordList'])
+    analyze_result['unrankedWordList'] = makeWordSet(['CEFR', 'Freq'], [
+        'Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['N'])
+    analyze_result['unrankedWordList'] -= (analyze_result['easyWordList']
+                                           | analyze_result['middleWordList'] | analyze_result['hardWordList'])
+    analyze_result['easyWordList'] = list(analyze_result['easyWordList'])
+    analyze_result['middleWordList'] = list(analyze_result['middleWordList'])
+    analyze_result['hardWordList'] = list(analyze_result['hardWordList'])
+    analyze_result['unrankedWordList'] = list(
+        analyze_result['unrankedWordList'])
 
     print('analyze ok')
 
@@ -155,5 +186,7 @@ def analyzeNpredict(videoId):
 #     f.write(output)
 
 
-# output = analyzeNpredict(cbc_kid)
+output = analyzeNpredict(cbc_kid)
+with open('api_result_test.json', 'wt', encoding='UTF-8') as f:
+    f.write(output)
 # print(output)
