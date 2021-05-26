@@ -15,11 +15,15 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 class ScriptAnalyzer:
     def getCaptions(self, videoId):
         # Get captions
-        try:  # using the generated one
+        try: # using the manually created one
             captions = YouTubeTranscriptApi.list_transcripts(
-                videoId).find_generated_transcript(['en']).fetch()
-        except:  # if there is no English caption including auto-generated one.
-            captions = [{'text': '', 'start': -1, 'duration': -1}]
+                videoId).find_manually_created_transcript(['en']).fetch()
+        except:
+            try: # using the generated one
+                captions = YouTubeTranscriptApi.list_transcripts(
+                    videoId).find_generated_transcript(['en']).fetch()
+            except: # if there is no English caption including auto-generated one.
+                captions = [{'text': '', 'start': -1, 'duration': -1}]
         return captions
 
     def getScript(self, videoId):
