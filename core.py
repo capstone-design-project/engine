@@ -82,15 +82,15 @@ def analyzeAll(videoId):
 
 
 # 분석된 json으로 예측 결과 반환
-def predictDifficulty(analyzed_result):
+# old feature list = ['avgSyllPerSec', 'avgCEFRScore', 'readability', 'uncommonRatio', 'A1ratio', 'A2ratio', 'B1ratio', 'B2ratio', 'C1ratio', 'C2ratio', 'Nratio']
+# new feature list = ['avgSyllPerSec', 'avgCEFRScore','avgWordCEFR','avgFreqCEFR', 'readability','avgSentenceLength', 'uncommonRatio', 'totalEasyRatio','totalMiddleRatio','totalHardRatio','wordEasyRatio','wordMiddleRatio','wordHardRatio','FreqEasyRatio','FreqMiddleRatio','FreqHardRatio']
+def predictDifficulty(analyzed_result, feature_list, model):
     video_data = []
-    train_feature = ['avgSyllPerSec', 'avgCEFRScore', 'readability', 'uncommonRatio',
-                     'A1ratio', 'A2ratio', 'B1ratio', 'B2ratio', 'C1ratio', 'C2ratio', 'Nratio']
     for feature in analyzed_result.keys():
-        if feature in train_feature:
+        if feature in feature_list:
             video_data.append(analyzed_result[feature])
 
-    with open('models/capstone_model_RF.pkl', 'rb') as model_file:
+    with open('models/'+model, 'rb') as model_file:
         model = pickle.load(model_file)
     return model.predict([video_data]).tolist()[0]
 
@@ -174,10 +174,81 @@ def analyzeNpredict(videoId):
 
     print('analyze ok')
 
-    difficulty = predictDifficulty(analyze_result)
+    model = 'capstone_model_RF.pkl'
+    predict_feature = ['avgSyllPerSec', 'avgCEFRScore', 'readability', 'uncommonRatio',
+                       'A1ratio', 'A2ratio', 'B1ratio', 'B2ratio', 'C1ratio', 'C2ratio', 'Nratio']
+    difficulty = predictDifficulty(analyze_result, predict_feature, model)
     analyze_result['difficulty'] = difficulty
 
     print('predict ok')
+
+    return json.dumps(analyze_result, indent=4)
+
+# 모든 정보 반환
+
+
+def analyzeComplete(videoId, youtubeApiKey):
+    # 분석용 데이터
+    try:
+        analyze_result = json.loads(analyzeAll(videoId))
+    except NotImplementedError:
+        print("empty caption! Cant analyze")
+        return json.dumps({}, indent=4)
+
+    # 단어 분석
+    wa_result = json.loads(WA.analyzeText(analyze_result['script']))
+
+    # 단어 리스트 반환
+    analyze_result['uniqueList'] = wa_result['unique_words']
+    analyze_result['uncommonList'] = wa_result['DCL']['uncommon_words']
+
+    def makeWordSet(targetList, subject, level):
+        wordSet = set()
+        for target in targetList:
+            for sub in subject:
+                if sub in wa_result[target]:
+                    for lv in level:
+                        wordSet.update(wa_result[target]
+                                       [sub]['classified_words'][lv])
+        return wordSet
+
+    analyze_result['easyWordList'] = makeWordSet(['CEFR', 'Freq'], [
+                                                 'Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['A1', 'A2'])
+    analyze_result['middleWordList'] = makeWordSet(
+        ['CEFR', 'Freq'], ['Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['B1', 'B2'])
+    analyze_result['middleWordList'] -= analyze_result['easyWordList']
+    analyze_result['hardWordList'] = makeWordSet(['CEFR', 'Freq'], [
+                                                 'Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['C1', 'C2'])
+    analyze_result['hardWordList'] -= (analyze_result['easyWordList']
+                                       | analyze_result['middleWordList'])
+    analyze_result['unrankedWordList'] = makeWordSet(['CEFR', 'Freq'], [
+        'Oxford', 'Japanese', 'Tv', 'Simpson', 'Gutenberg'], ['N'])
+    analyze_result['unrankedWordList'] -= (analyze_result['easyWordList']
+                                           | analyze_result['middleWordList'] | analyze_result['hardWordList'])
+    analyze_result['easyWordList'] = list(analyze_result['easyWordList'])
+    analyze_result['middleWordList'] = list(analyze_result['middleWordList'])
+    analyze_result['hardWordList'] = list(analyze_result['hardWordList'])
+    analyze_result['unrankedWordList'] = list(
+        analyze_result['unrankedWordList'])
+
+    print('analyze ok')
+
+    model = 'capstone_model_RF_upgrade.pkl'
+    predict_feature = ['avgSyllPerSec', 'avgCEFRScore', 'avgWordCEFR', 'avgFreqCEFR', 'readability', 'avgSentenceLength', 'uncommonRatio', 'totalEasyRatio',
+                       'totalMiddleRatio', 'totalHardRatio', 'wordEasyRatio', 'wordMiddleRatio', 'wordHardRatio', 'FreqEasyRatio', 'FreqMiddleRatio', 'FreqHardRatio']
+    difficulty = predictDifficulty(analyze_result, predict_feature, model)
+    analyze_result['difficulty'] = difficulty
+
+    print('predict ok')
+
+    try:
+        analyze_result['videoInfo'] = json.loads(
+            getVideoInfo(youtubeApiKey, videoId))
+    except Exception:
+        print('youtube api problem')
+        analyze_result['videoInfo'] = {}
+
+    print('video info ok')
 
     return json.dumps(analyze_result, indent=4)
 
@@ -190,12 +261,21 @@ def getVideoInfo(APIKey, videoId):
 
 
 # output = analyzeAll(comedy_central)
-# with open('comedycentral_test.json', 'wt', encoding='UTF-8') as f:
+# with open('comedycentral_test_upgrade.json', 'wt', encoding='UTF-8') as f:
 #     f.write(output)
 
 
 # output = analyzeNpredict(cbc_kid)
 # with open('api_result_test.json', 'wt', encoding='UTF-8') as f:
+#     f.write(output)
+# print(output)
+
+# with open('APIKey.json', 'rt', encoding='UTF-8') as f:
+#     key = json.load(f)
+#     apikey = key['APIkey']
+
+# output = analyzeComplete(cbc_kid, apikey)
+# with open('api_result_test_upgrade.json', 'wt', encoding='UTF-8') as f:
 #     f.write(output)
 # print(output)
 
