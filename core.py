@@ -233,7 +233,7 @@ def analyzeComplete(videoId, youtubeApiKey):
 
     print('analyze ok')
 
-    model = 'capstone_model_RF_upgrade.pkl'
+    model = 'capstone_model_RF_upgrade_2.pkl'
     predict_feature = ['avgSyllPerSec', 'avgCEFRScore', 'avgWordCEFR', 'avgFreqCEFR', 'readability', 'avgSentenceLength', 'uncommonRatio', 'totalEasyRatio',
                        'totalMiddleRatio', 'totalHardRatio', 'wordEasyRatio', 'wordMiddleRatio', 'wordHardRatio', 'FreqEasyRatio', 'FreqMiddleRatio', 'FreqHardRatio']
     difficulty = predictDifficulty(analyze_result, predict_feature, model)
