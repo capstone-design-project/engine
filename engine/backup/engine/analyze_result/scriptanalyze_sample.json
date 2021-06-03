@@ -1,0 +1,1128 @@
+{
+    "videoId": "TLnUJzueBOQ",
+    "script": "hey all I know is it's good having another brother moving to the neighborhood hey man it's good to have you over and I'll take that you will dig this hey nice guitar collection oh that's Manny you want to hear something yeah sure well I'm just a good old American boy with a heart that's red buttons dreamin of the girl with the red hair and freckles in her eyes like the skies are blue touch music I grew up in Texas you know so alright keep her safe from the home is in the wrong side of town where they're smoking the reefer and acting like clowns keep that pretty address from getting dirty in Brown cuz that's the American Way oh pretty racist song racist against who of black people black people man but I'm black well keeping the redheaded girl away from the homies on the wrong side of town homies come on brother this is all kinds of homies white homies Asian homies homies are black know I think you're making them black man I mean I think that's your stuff you hear the twang and then you assume that it's racist but that's that's just what country music is like look if you even like this you'll like this one alright some folks wear their hats way off to the side with their pants down low and a gun tucked inside take their beer by the 40 and their chicken deep-fried I think we all know we're talking about the only dark guy like us when I turn off the lights the only hood I love this party and Wyatt and trust you if I can't see your face hey stop that that's racist what's what what is race is about it the only hood I love is pointy and white yeah man let's talk about the Klan man the Ku Klux Klan are you outside of your mind that's traditional country music imagery man like a pickup truck or sleeping under the stars or your dog got killed or your wife left you same thing I would have been fine with any of those things what is the difference between those things and what is in the song they're not racial hey you know what kind of say something man I'm just gonna be frank you're getting a little like Al Sharpton like Farrakhan army right now oh my god are you serious hey can you you know what I do one more let me just do one more dog I absolutely promise you that this song is not racist and it's impossible for you to misinterpret it as such okay it seems like you're about to sing the most racist song so far come on man hey Shh over here trying to sing about a tire swing light off an entire genre music the banjo strumming and the drums are a banging let's get the boys together and have ourselves a hanging oh damn now I see it now I see it you",
+    "avgSyllPerSec": 1.7001962152372847,
+    "0.03": {
+        "text": "hey all I know is it's good having",
+        "duration": 3.33,
+        "token": [
+            "hey",
+            "all",
+            "I",
+            "know",
+            "is",
+            "it",
+            "'s",
+            "good",
+            "having"
+        ],
+        "wordPerSec": 2.7027027027027026,
+        "syllPerSec": 2.4024024024024024
+    },
+    "2.19": {
+        "text": "another brother moving to the",
+        "duration": 2.64,
+        "token": [
+            "another",
+            "brother",
+            "moving",
+            "to",
+            "the"
+        ],
+        "wordPerSec": 1.8939393939393938,
+        "syllPerSec": 3.4090909090909087
+    },
+    "3.36": {
+        "text": "neighborhood hey man it's good to have",
+        "duration": 3.959,
+        "token": [
+            "neighborhood",
+            "hey",
+            "man",
+            "it",
+            "'s",
+            "good",
+            "to",
+            "have"
+        ],
+        "wordPerSec": 2.020712301086133,
+        "syllPerSec": 2.525890376357666
+    },
+    "4.83": {
+        "text": "you over and I'll take that you will dig",
+        "duration": 4.79,
+        "token": [
+            "you",
+            "over",
+            "and",
+            "I",
+            "'ll",
+            "take",
+            "that",
+            "you",
+            "will",
+            "dig"
+        ],
+        "wordPerSec": 2.0876826722338206,
+        "syllPerSec": 2.0876826722338206
+    },
+    "7.319": {
+        "text": "this",
+        "duration": 2.301,
+        "token": [
+            "this"
+        ],
+        "wordPerSec": 0.43459365493263796,
+        "syllPerSec": 0.43459365493263796
+    },
+    "10.04": {
+        "text": "hey nice guitar collection",
+        "duration": 5.59,
+        "token": [
+            "hey",
+            "nice",
+            "guitar",
+            "collection"
+        ],
+        "wordPerSec": 0.7155635062611807,
+        "syllPerSec": 1.4311270125223614
+    },
+    "14.099": {
+        "text": "oh that's Manny you want to hear",
+        "duration": 5.421,
+        "token": [
+            "oh",
+            "that",
+            "'s",
+            "Manny",
+            "you",
+            "want",
+            "to",
+            "hear"
+        ],
+        "wordPerSec": 1.4757424829367274,
+        "syllPerSec": 1.4757424829367274
+    },
+    "15.63": {
+        "text": "something yeah sure",
+        "duration": 3.89,
+        "token": [
+            "something",
+            "yeah",
+            "sure"
+        ],
+        "wordPerSec": 0.7712082262210797,
+        "syllPerSec": 1.5424164524421593
+    },
+    "23.02": {
+        "text": "well I'm just a good old American boy",
+        "duration": 8.37,
+        "token": [
+            "well",
+            "I",
+            "'m",
+            "just",
+            "a",
+            "good",
+            "old",
+            "American",
+            "boy"
+        ],
+        "wordPerSec": 1.0752688172043012,
+        "syllPerSec": 1.0752688172043012
+    },
+    "25.93": {
+        "text": "with a heart that's red buttons dreamin",
+        "duration": 7.17,
+        "token": [
+            "with",
+            "a",
+            "heart",
+            "that",
+            "'s",
+            "red",
+            "buttons",
+            "dreamin"
+        ],
+        "wordPerSec": 1.1157601115760112,
+        "syllPerSec": 1.2552301255230125
+    },
+    "31.39": {
+        "text": "of the girl with the red hair and",
+        "duration": 3.87,
+        "token": [
+            "of",
+            "the",
+            "girl",
+            "with",
+            "the",
+            "red",
+            "hair",
+            "and"
+        ],
+        "wordPerSec": 2.0671834625322996,
+        "syllPerSec": 2.0671834625322996
+    },
+    "33.1": {
+        "text": "freckles in her eyes like the skies are",
+        "duration": 6.419,
+        "token": [
+            "freckles",
+            "in",
+            "her",
+            "eyes",
+            "like",
+            "the",
+            "skies",
+            "are"
+        ],
+        "wordPerSec": 1.2463000467362517,
+        "syllPerSec": 1.7136625642623462
+    },
+    "35.26": {
+        "text": "blue touch music I grew up in Texas you",
+        "duration": 7.2,
+        "token": [
+            "blue",
+            "touch",
+            "music",
+            "I",
+            "grew",
+            "up",
+            "in",
+            "Texas",
+            "you"
+        ],
+        "wordPerSec": 1.25,
+        "syllPerSec": 1.3888888888888888
+    },
+    "39.519": {
+        "text": "know so alright keep her safe from the",
+        "duration": 4.921,
+        "token": [
+            "know",
+            "so",
+            "alright",
+            "keep",
+            "her",
+            "safe",
+            "from",
+            "the"
+        ],
+        "wordPerSec": 1.625685836212152,
+        "syllPerSec": 2.03210729526519
+    },
+    "42.46": {
+        "text": "home is in the wrong side of town where",
+        "duration": 3.96,
+        "token": [
+            "home",
+            "is",
+            "in",
+            "the",
+            "wrong",
+            "side",
+            "of",
+            "town",
+            "where"
+        ],
+        "wordPerSec": 2.272727272727273,
+        "syllPerSec": 3.0303030303030303
+    },
+    "44.44": {
+        "text": "they're smoking the reefer and acting",
+        "duration": 6.119,
+        "token": [
+            "they",
+            "'re",
+            "smoking",
+            "the",
+            "reefer",
+            "and",
+            "acting"
+        ],
+        "wordPerSec": 1.1439777741461024,
+        "syllPerSec": 1.6342539630658606
+    },
+    "46.42": {
+        "text": "like clowns keep that pretty address",
+        "duration": 6.18,
+        "token": [
+            "like",
+            "clowns",
+            "keep",
+            "that",
+            "pretty",
+            "address"
+        ],
+        "wordPerSec": 0.970873786407767,
+        "syllPerSec": 1.4563106796116505
+    },
+    "50.559": {
+        "text": "from getting dirty in Brown cuz that's",
+        "duration": 12.441,
+        "token": [
+            "from",
+            "getting",
+            "dirty",
+            "in",
+            "Brown",
+            "cuz",
+            "that",
+            "'s"
+        ],
+        "wordPerSec": 0.6430351257937464,
+        "syllPerSec": 0.7234145165179647
+    },
+    "52.6": {
+        "text": "the American Way oh pretty racist song",
+        "duration": 14.82,
+        "token": [
+            "the",
+            "American",
+            "Way",
+            "oh",
+            "pretty",
+            "racist",
+            "song"
+        ],
+        "wordPerSec": 0.47233468286099867,
+        "syllPerSec": 0.7422402159244265
+    },
+    "63.0": {
+        "text": "racist against who of black people black",
+        "duration": 8.2,
+        "token": [
+            "racist",
+            "against",
+            "who",
+            "of",
+            "black",
+            "people",
+            "black"
+        ],
+        "wordPerSec": 0.853658536585366,
+        "syllPerSec": 1.2195121951219514
+    },
+    "67.42": {
+        "text": "people man but I'm black well keeping",
+        "duration": 5.19,
+        "token": [
+            "people",
+            "man",
+            "but",
+            "I",
+            "'m",
+            "black",
+            "well",
+            "keeping"
+        ],
+        "wordPerSec": 1.541425818882466,
+        "syllPerSec": 1.541425818882466
+    },
+    "71.2": {
+        "text": "the redheaded girl away from the homies",
+        "duration": 4.41,
+        "token": [
+            "the",
+            "redheaded",
+            "girl",
+            "away",
+            "from",
+            "the",
+            "homies"
+        ],
+        "wordPerSec": 1.5873015873015872,
+        "syllPerSec": 2.494331065759637
+    },
+    "72.61": {
+        "text": "on the wrong side of town homies come on",
+        "duration": 4.47,
+        "token": [
+            "on",
+            "the",
+            "wrong",
+            "side",
+            "of",
+            "town",
+            "homies",
+            "come",
+            "on"
+        ],
+        "wordPerSec": 2.0134228187919465,
+        "syllPerSec": 2.684563758389262
+    },
+    "75.61": {
+        "text": "brother this is all kinds of homies",
+        "duration": 6.24,
+        "token": [
+            "brother",
+            "this",
+            "is",
+            "all",
+            "kinds",
+            "of",
+            "homies"
+        ],
+        "wordPerSec": 1.1217948717948718,
+        "syllPerSec": 1.4423076923076923
+    },
+    "77.08": {
+        "text": "white homies Asian homies homies are",
+        "duration": 6.75,
+        "token": [
+            "white",
+            "homies",
+            "Asian",
+            "homies",
+            "homies",
+            "are"
+        ],
+        "wordPerSec": 0.8888888888888888,
+        "syllPerSec": 1.6296296296296295
+    },
+    "81.85": {
+        "text": "black know I think you're making them",
+        "duration": 3.39,
+        "token": [
+            "black",
+            "know",
+            "I",
+            "think",
+            "you",
+            "'re",
+            "making",
+            "them"
+        ],
+        "wordPerSec": 2.359882005899705,
+        "syllPerSec": 2.359882005899705
+    },
+    "83.83": {
+        "text": "black man I mean I think that's your",
+        "duration": 4.02,
+        "token": [
+            "black",
+            "man",
+            "I",
+            "mean",
+            "I",
+            "think",
+            "that",
+            "'s",
+            "your"
+        ],
+        "wordPerSec": 2.238805970149254,
+        "syllPerSec": 1.492537313432836
+    },
+    "85.24": {
+        "text": "stuff you hear the twang and then you",
+        "duration": 4.86,
+        "token": [
+            "stuff",
+            "you",
+            "hear",
+            "the",
+            "twang",
+            "and",
+            "then",
+            "you"
+        ],
+        "wordPerSec": 1.6460905349794237,
+        "syllPerSec": 1.6460905349794237
+    },
+    "87.85": {
+        "text": "assume that it's racist but that's",
+        "duration": 3.78,
+        "token": [
+            "assume",
+            "that",
+            "it",
+            "'s",
+            "racist",
+            "but",
+            "that",
+            "'s"
+        ],
+        "wordPerSec": 2.1164021164021167,
+        "syllPerSec": 2.380952380952381
+    },
+    "90.1": {
+        "text": "that's just what country music is like",
+        "duration": 3.78,
+        "token": [
+            "that",
+            "'s",
+            "just",
+            "what",
+            "country",
+            "music",
+            "is",
+            "like"
+        ],
+        "wordPerSec": 2.1164021164021167,
+        "syllPerSec": 2.6455026455026456
+    },
+    "91.63": {
+        "text": "look if you even like this you'll like",
+        "duration": 2.729,
+        "token": [
+            "look",
+            "if",
+            "you",
+            "even",
+            "like",
+            "this",
+            "you",
+            "'ll",
+            "like"
+        ],
+        "wordPerSec": 3.297911322828875,
+        "syllPerSec": 4.030780505679736
+    },
+    "93.88": {
+        "text": "this one",
+        "duration": 3.08,
+        "token": [
+            "this",
+            "one"
+        ],
+        "wordPerSec": 0.6493506493506493,
+        "syllPerSec": 0.974025974025974
+    },
+    "94.359": {
+        "text": "alright",
+        "duration": 2.601,
+        "token": [
+            "alright"
+        ],
+        "wordPerSec": 0.3844675124951942,
+        "syllPerSec": 0.7689350249903883
+    },
+    "97.409": {
+        "text": "some folks wear their hats way off to",
+        "duration": 5.161,
+        "token": [
+            "some",
+            "folks",
+            "wear",
+            "their",
+            "hats",
+            "way",
+            "off",
+            "to"
+        ],
+        "wordPerSec": 1.550087192404573,
+        "syllPerSec": 1.7438480914551444
+    },
+    "100.229": {
+        "text": "the side with their pants down low and a",
+        "duration": 4.35,
+        "token": [
+            "the",
+            "side",
+            "with",
+            "their",
+            "pants",
+            "down",
+            "low",
+            "and",
+            "a"
+        ],
+        "wordPerSec": 2.0689655172413794,
+        "syllPerSec": 2.298850574712644
+    },
+    "102.57": {
+        "text": "gun tucked inside take their beer by the",
+        "duration": 4.619,
+        "token": [
+            "gun",
+            "tucked",
+            "inside",
+            "take",
+            "their",
+            "beer",
+            "by",
+            "the"
+        ],
+        "wordPerSec": 1.7319766183156529,
+        "syllPerSec": 2.597964927473479
+    },
+    "104.579": {
+        "text": "40 and their chicken deep-fried I think",
+        "duration": 7.32,
+        "token": [
+            "40",
+            "and",
+            "their",
+            "chicken",
+            "deep-fried",
+            "I",
+            "think"
+        ],
+        "wordPerSec": 0.9562841530054644,
+        "syllPerSec": 0.9562841530054644
+    },
+    "107.189": {
+        "text": "we all know we're talking about the only",
+        "duration": 6.72,
+        "token": [
+            "we",
+            "all",
+            "know",
+            "we",
+            "'re",
+            "talking",
+            "about",
+            "the",
+            "only"
+        ],
+        "wordPerSec": 1.3392857142857144,
+        "syllPerSec": 1.7857142857142858
+    },
+    "111.899": {
+        "text": "dark guy like us when I turn off the",
+        "duration": 4.801,
+        "token": [
+            "dark",
+            "guy",
+            "like",
+            "us",
+            "when",
+            "I",
+            "turn",
+            "off",
+            "the"
+        ],
+        "wordPerSec": 1.8746094563632576,
+        "syllPerSec": 1.8746094563632576
+    },
+    "113.909": {
+        "text": "lights the only hood I love this party",
+        "duration": 4.981,
+        "token": [
+            "lights",
+            "the",
+            "only",
+            "hood",
+            "I",
+            "love",
+            "this",
+            "party"
+        ],
+        "wordPerSec": 1.6061031921300943,
+        "syllPerSec": 2.007628990162618
+    },
+    "116.7": {
+        "text": "and Wyatt and trust you if I can't see",
+        "duration": 9.9,
+        "token": [
+            "and",
+            "Wyatt",
+            "and",
+            "trust",
+            "you",
+            "if",
+            "I",
+            "ca",
+            "n't",
+            "see"
+        ],
+        "wordPerSec": 1.0101010101010102,
+        "syllPerSec": 0.8080808080808081
+    },
+    "118.89": {
+        "text": "your face hey stop that that's racist",
+        "duration": 10.02,
+        "token": [
+            "your",
+            "face",
+            "hey",
+            "stop",
+            "that",
+            "that",
+            "'s",
+            "racist"
+        ],
+        "wordPerSec": 0.7984031936127745,
+        "syllPerSec": 0.8982035928143713
+    },
+    "126.6": {
+        "text": "what's what what is race is about it the",
+        "duration": 4.8,
+        "token": [
+            "what",
+            "'s",
+            "what",
+            "what",
+            "is",
+            "race",
+            "is",
+            "about",
+            "it",
+            "the"
+        ],
+        "wordPerSec": 2.0833333333333335,
+        "syllPerSec": 2.291666666666667
+    },
+    "128.91": {
+        "text": "only hood I love is pointy and white",
+        "duration": 5.78,
+        "token": [
+            "only",
+            "hood",
+            "I",
+            "love",
+            "is",
+            "pointy",
+            "and",
+            "white"
+        ],
+        "wordPerSec": 1.3840830449826989,
+        "syllPerSec": 1.903114186851211
+    },
+    "131.4": {
+        "text": "yeah man let's talk about the Klan man",
+        "duration": 7.199,
+        "token": [
+            "yeah",
+            "man",
+            "let",
+            "'s",
+            "talk",
+            "about",
+            "the",
+            "Klan",
+            "man"
+        ],
+        "wordPerSec": 1.2501736352271149,
+        "syllPerSec": 1.2501736352271149
+    },
+    "134.69": {
+        "text": "the Ku Klux Klan are you outside of your",
+        "duration": 6.46,
+        "token": [
+            "the",
+            "Ku",
+            "Klux",
+            "Klan",
+            "are",
+            "you",
+            "outside",
+            "of",
+            "your"
+        ],
+        "wordPerSec": 1.3931888544891642,
+        "syllPerSec": 1.8575851393188854
+    },
+    "138.599": {
+        "text": "mind that's traditional country music",
+        "duration": 4.771,
+        "token": [
+            "mind",
+            "that",
+            "'s",
+            "traditional",
+            "country",
+            "music"
+        ],
+        "wordPerSec": 1.2575979878432195,
+        "syllPerSec": 2.0959966464053656
+    },
+    "141.15": {
+        "text": "imagery man like a pickup truck or",
+        "duration": 4.47,
+        "token": [
+            "imagery",
+            "man",
+            "like",
+            "a",
+            "pickup",
+            "truck",
+            "or"
+        ],
+        "wordPerSec": 1.5659955257270695,
+        "syllPerSec": 2.684563758389262
+    },
+    "143.37": {
+        "text": "sleeping under the stars or your dog got",
+        "duration": 3.96,
+        "token": [
+            "sleeping",
+            "under",
+            "the",
+            "stars",
+            "or",
+            "your",
+            "dog",
+            "got"
+        ],
+        "wordPerSec": 2.0202020202020203,
+        "syllPerSec": 2.525252525252525
+    },
+    "145.62": {
+        "text": "killed or your wife left you same thing",
+        "duration": 3.479,
+        "token": [
+            "killed",
+            "or",
+            "your",
+            "wife",
+            "left",
+            "you",
+            "same",
+            "thing"
+        ],
+        "wordPerSec": 2.2995113538373095,
+        "syllPerSec": 3.1618281115263005
+    },
+    "147.33": {
+        "text": "I would have been fine with any of those",
+        "duration": 3.33,
+        "token": [
+            "I",
+            "would",
+            "have",
+            "been",
+            "fine",
+            "with",
+            "any",
+            "of",
+            "those"
+        ],
+        "wordPerSec": 2.7027027027027026,
+        "syllPerSec": 3.6036036036036037
+    },
+    "149.099": {
+        "text": "things what is the difference between",
+        "duration": 3.121,
+        "token": [
+            "things",
+            "what",
+            "is",
+            "the",
+            "difference",
+            "between"
+        ],
+        "wordPerSec": 1.9224607497596924,
+        "syllPerSec": 3.2041012495994874
+    },
+    "150.66": {
+        "text": "those things and what is in the song",
+        "duration": 3.81,
+        "token": [
+            "those",
+            "things",
+            "and",
+            "what",
+            "is",
+            "in",
+            "the",
+            "song"
+        ],
+        "wordPerSec": 2.099737532808399,
+        "syllPerSec": 2.3622047244094486
+    },
+    "152.22": {
+        "text": "they're not racial hey you know what",
+        "duration": 3.599,
+        "token": [
+            "they",
+            "'re",
+            "not",
+            "racial",
+            "hey",
+            "you",
+            "know",
+            "what"
+        ],
+        "wordPerSec": 2.2228396776882464,
+        "syllPerSec": 2.5006946373992776
+    },
+    "154.47": {
+        "text": "kind of say something man I'm just gonna",
+        "duration": 4.26,
+        "token": [
+            "kind",
+            "of",
+            "say",
+            "something",
+            "man",
+            "I",
+            "'m",
+            "just",
+            "gon",
+            "na"
+        ],
+        "wordPerSec": 2.347417840375587,
+        "syllPerSec": 2.347417840375587
+    },
+    "155.819": {
+        "text": "be frank you're getting a little like Al",
+        "duration": 6.061,
+        "token": [
+            "be",
+            "frank",
+            "you",
+            "'re",
+            "getting",
+            "a",
+            "little",
+            "like",
+            "Al"
+        ],
+        "wordPerSec": 1.4849034812737172,
+        "syllPerSec": 1.8148820326678765
+    },
+    "158.73": {
+        "text": "Sharpton like Farrakhan army right now",
+        "duration": 6.75,
+        "token": [
+            "Sharpton",
+            "like",
+            "Farrakhan",
+            "army",
+            "right",
+            "now"
+        ],
+        "wordPerSec": 0.8888888888888888,
+        "syllPerSec": 1.6296296296296295
+    },
+    "161.88": {
+        "text": "oh my god are you serious hey can you",
+        "duration": 5.31,
+        "token": [
+            "oh",
+            "my",
+            "god",
+            "are",
+            "you",
+            "serious",
+            "hey",
+            "can",
+            "you"
+        ],
+        "wordPerSec": 1.6949152542372883,
+        "syllPerSec": 2.0715630885122414
+    },
+    "165.48": {
+        "text": "you know what I do one more let me just",
+        "duration": 4.44,
+        "token": [
+            "you",
+            "know",
+            "what",
+            "I",
+            "do",
+            "one",
+            "more",
+            "let",
+            "me",
+            "just"
+        ],
+        "wordPerSec": 2.252252252252252,
+        "syllPerSec": 2.477477477477477
+    },
+    "167.19": {
+        "text": "do one more dog I absolutely promise you",
+        "duration": 6.09,
+        "token": [
+            "do",
+            "one",
+            "more",
+            "dog",
+            "I",
+            "absolutely",
+            "promise",
+            "you"
+        ],
+        "wordPerSec": 1.3136288998357963,
+        "syllPerSec": 2.4630541871921183
+    },
+    "169.92": {
+        "text": "that this song is not racist and it's",
+        "duration": 5.76,
+        "token": [
+            "that",
+            "this",
+            "song",
+            "is",
+            "not",
+            "racist",
+            "and",
+            "it",
+            "'s"
+        ],
+        "wordPerSec": 1.5625,
+        "syllPerSec": 1.5625
+    },
+    "173.28": {
+        "text": "impossible for you to misinterpret it as",
+        "duration": 4.039,
+        "token": [
+            "impossible",
+            "for",
+            "you",
+            "to",
+            "misinterpret",
+            "it",
+            "as"
+        ],
+        "wordPerSec": 1.733102253032929,
+        "syllPerSec": 3.218618469918297
+    },
+    "175.68": {
+        "text": "such",
+        "duration": 4.17,
+        "token": [
+            "such"
+        ],
+        "wordPerSec": 0.23980815347721823,
+        "syllPerSec": 0.23980815347721823
+    },
+    "177.319": {
+        "text": "okay it seems like you're about to sing",
+        "duration": 6.121,
+        "token": [
+            "okay",
+            "it",
+            "seems",
+            "like",
+            "you",
+            "'re",
+            "about",
+            "to",
+            "sing"
+        ],
+        "wordPerSec": 1.470347982355824,
+        "syllPerSec": 1.960463976474432
+    },
+    "179.85": {
+        "text": "the most racist song so far",
+        "duration": 3.59,
+        "token": [
+            "the",
+            "most",
+            "racist",
+            "song",
+            "so",
+            "far"
+        ],
+        "wordPerSec": 1.6713091922005572,
+        "syllPerSec": 1.9498607242339834
+    },
+    "192.28": {
+        "text": "come on man hey Shh over here trying to",
+        "duration": 7.71,
+        "token": [
+            "come",
+            "on",
+            "man",
+            "hey",
+            "Shh",
+            "over",
+            "here",
+            "trying",
+            "to"
+        ],
+        "wordPerSec": 1.1673151750972763,
+        "syllPerSec": 1.4267185473411155
+    },
+    "196.36": {
+        "text": "sing about a tire swing light off an",
+        "duration": 8.19,
+        "token": [
+            "sing",
+            "about",
+            "a",
+            "tire",
+            "swing",
+            "light",
+            "off",
+            "an"
+        ],
+        "wordPerSec": 0.9768009768009769,
+        "syllPerSec": 1.221001221001221
+    },
+    "199.99": {
+        "text": "entire genre music the banjo strumming",
+        "duration": 7.62,
+        "token": [
+            "entire",
+            "genre",
+            "music",
+            "the",
+            "banjo",
+            "strumming"
+        ],
+        "wordPerSec": 0.7874015748031495,
+        "syllPerSec": 1.574803149606299
+    },
+    "204.55": {
+        "text": "and the drums are a banging let's get",
+        "duration": 5.91,
+        "token": [
+            "and",
+            "the",
+            "drums",
+            "are",
+            "a",
+            "banging",
+            "let",
+            "'s",
+            "get"
+        ],
+        "wordPerSec": 1.5228426395939085,
+        "syllPerSec": 1.6920473773265652
+    },
+    "207.61": {
+        "text": "the boys together and have ourselves a",
+        "duration": 8.97,
+        "token": [
+            "the",
+            "boys",
+            "together",
+            "and",
+            "have",
+            "ourselves",
+            "a"
+        ],
+        "wordPerSec": 0.7803790412486065,
+        "syllPerSec": 1.3377926421404682
+    },
+    "210.46": {
+        "text": "hanging oh damn now I see it now I see",
+        "duration": 8.27,
+        "token": [
+            "hanging",
+            "oh",
+            "damn",
+            "now",
+            "I",
+            "see",
+            "it",
+            "now",
+            "I",
+            "see"
+        ],
+        "wordPerSec": 1.2091898428053205,
+        "syllPerSec": 1.0882708585247884
+    },
+    "216.58": {
+        "text": "it",
+        "duration": 2.15,
+        "token": [
+            "it"
+        ],
+        "wordPerSec": 0.46511627906976744,
+        "syllPerSec": 0.46511627906976744
+    },
+    "224.09": {
+        "text": "you",
+        "duration": 2.06,
+        "token": [
+            "you"
+        ],
+        "wordPerSec": 0.4854368932038835,
+        "syllPerSec": 0.4854368932038835
+    }
+}
