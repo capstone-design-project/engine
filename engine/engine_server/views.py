@@ -17,7 +17,7 @@ class Video(View):
         videoId = j['videoId']
 
         print('videoId: ' + videoId)
-        output = core.analyzeNpredict(videoId)
+        output = core.analyzeComplete(videoId,'AIzaSyDRSRROudV5mjr1VEREqw6FKwbCTXpeqLw')
         with open('./comedycentral_test.json', 'wt', encoding='UTF-8') as f:
             f.write(output)
 
