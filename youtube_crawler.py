@@ -86,3 +86,34 @@ class youtubeCrawler:
             video_info['topic'] = []
 
         return video_info
+
+    def get_channel_info(self, channel_id):
+
+        channels = self.youtube.channels().list(
+            part='id, snippet,  statistics,  topicDetails', id=channel_id).execute()
+        channel_info = {}
+        channel_info['channelId'] = channel_id
+        channel_info['title'] = channels['items'][0]['snippet']['title']
+        try:
+            channel_info['description'] = channels['items'][0]['snippet']['description']
+        except KeyError:
+            channel_info['description'] = ""
+        try:
+            channel_info['thumbnails'] = channels['items'][0]['snippet']['thumbnails']['medium']['url']
+        except KeyError:
+            channel_info['thumbnails'] = channels['items'][0]['snippet']['thumbnails']['default']['url']
+        try:
+            channel_info['topic'] = list(map(lambda x: x.replace(
+                'https://en.wikipedia.org/wiki/', ''), channels['items'][0]['topicDetails']['topicCategories']))
+        except KeyError:
+            channel_info['topic'] = []
+        try:
+            channel_info['subscriber'] = channels['items'][0]['statistics']['subscriberCount']
+        except KeyError:
+            channel_info['subscriber'] = -1
+        try:
+            channel_info['country'] = channels['items'][0]['snippet']['country']
+        except KeyError:
+            channel_info['country'] = "unknown"
+
+        return channel_info
