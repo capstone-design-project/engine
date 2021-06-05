@@ -73,10 +73,16 @@ class youtubeCrawler:
         video_info['channelTitle'] = videos['items'][0]['snippet']['channelTitle']
         video_info['title'] = videos['items'][0]['snippet']['title']
         video_info['description'] = videos['items'][0]['snippet']['description']
-        video_info['thumbnails'] = videos['items'][0]['snippet']['thumbnails']['standard']['url']
+        try:
+            video_info['thumbnails'] = videos['items'][0]['snippet']['thumbnails']['standard']['url']
+        except KeyError:
+            video_info['thumbnails'] = videos['items'][0]['snippet']['thumbnails']['medium']['url']
         video_info['category'] = video_category_id[int(videos['items']
                                                    [0]['snippet']['categoryId'])]
-        video_info['topic'] = list(map(lambda x: x.replace(
-            'https://en.wikipedia.org/wiki/', ''), videos['items'][0]['topicDetails']['topicCategories']))
+        try:
+            video_info['topic'] = list(map(lambda x: x.replace(
+                'https://en.wikipedia.org/wiki/', ''), videos['items'][0]['topicDetails']['topicCategories']))
+        except KeyError:
+            video_info['topic'] = []
 
         return video_info

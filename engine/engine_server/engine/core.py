@@ -244,6 +244,9 @@ def analyzeComplete(videoId, youtubeApiKey):
     try:
         analyze_result['videoInfo'] = json.loads(
             getVideoInfo(youtubeApiKey, videoId))
+        analyze_result['videoInfo']['channelImage'] = getChannelImage(
+            youtubeApiKey, analyze_result['videoInfo']['channelId'])
+
     except Exception:
         print('youtube api problem')
         analyze_result['videoInfo'] = {}
@@ -260,6 +263,19 @@ def getVideoInfo(APIKey, videoId):
     return json.dumps(video_info, indent=4)
 
 
+def getChannelInfo(APIKey, channelId):
+    YC = youtubeCrawler(APIKey)
+    channel_info = YC.get_channel_info(channelId)
+
+    return json.dumps(channel_info, indent=4)
+
+
+def getChannelImage(APIKey, channelId):
+    YC = youtubeCrawler(APIKey)
+    channel_info = YC.get_channel_info(channelId)
+
+    return channel_info['thumbnails']
+
 # output = analyzeAll(comedy_central)
 # with open('comedycentral_test_upgrade.json', 'wt', encoding='UTF-8') as f:
 #     f.write(output)
@@ -270,14 +286,14 @@ def getVideoInfo(APIKey, videoId):
 #     f.write(output)
 # print(output)
 
-# with open('APIKey.json', 'rt', encoding='UTF-8') as f:
-#     key = json.load(f)
-#     apikey = key['APIkey']
+with open('APIKey.json', 'rt', encoding='UTF-8') as f:
+    key = json.load(f)
+    apikey = key['APIkey']
 
-# output = analyzeComplete(cbc_kid, apikey)
-# with open('api_result_test_upgrade.json', 'wt', encoding='UTF-8') as f:
-#     f.write(output)
-# print(output)
+output = analyzeComplete(cbc_kid, apikey)
+with open('rebuild_test.json', 'wt', encoding='UTF-8') as f:
+    f.write(output)
+print(output)
 
 # with open('APIKey.json', 'rt', encoding='UTF-8') as f:
 #     key = json.load(f)
