@@ -233,7 +233,8 @@ def analyzeComplete(videoId, youtubeApiKey):
 
     print('analyze ok')
 
-    model = 'capstone_model_RF_upgrade_2.pkl'
+    # model = 'capstone_model_RF_upgrade_2.pkl' 예전버전
+    model = 'capstone_model_RF_new.pkl'
     predict_feature = ['avgSyllPerSec', 'avgCEFRScore', 'avgWordCEFR', 'avgFreqCEFR', 'readability', 'avgSentenceLength', 'uncommonRatio', 'totalEasyRatio',
                        'totalMiddleRatio', 'totalHardRatio', 'wordEasyRatio', 'wordMiddleRatio', 'wordHardRatio', 'FreqEasyRatio', 'FreqMiddleRatio', 'FreqHardRatio']
     difficulty = predictDifficulty(analyze_result, predict_feature, model)
@@ -286,14 +287,14 @@ def getChannelImage(APIKey, channelId):
 #     f.write(output)
 # print(output)
 
-with open('APIKey.json', 'rt', encoding='UTF-8') as f:
-    key = json.load(f)
-    apikey = key['APIkey']
+# with open('APIKey.json', 'rt', encoding='UTF-8') as f:
+#     key = json.load(f)
+#     apikey = key['APIkey']
 
-output = analyzeComplete(cbc_kid, apikey)
-with open('rebuild_test.json', 'wt', encoding='UTF-8') as f:
-    f.write(output)
-print(output)
+# output = analyzeComplete(cbc_kid, apikey)
+# with open('rebuild_test.json', 'wt', encoding='UTF-8') as f:
+#     f.write(output)
+# print(output)
 
 # with open('APIKey.json', 'rt', encoding='UTF-8') as f:
 #     key = json.load(f)
